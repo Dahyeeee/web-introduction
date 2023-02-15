@@ -1,4 +1,10 @@
+.movie {
+  display: flex;
+  flex-direction: row;
+}
+
 .movie_img {
   width: 200px;
   cursor: pointer;
+  padding: 20px;
 }

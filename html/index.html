@@ -6,84 +6,102 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/main.js"></script>
   <title>Hey everyone</title>
+
 </head>
 
 <body>
   <div class="content">
     <div class="introduction">
-      <h1>Let me Introduce my self...</h1>
+      <h1>안녕하세요, 헤다에요 ☺️</h1>
       <ul>
-        <li>닉네임: 헤다</li>
-        <li>좋아하는 음식: 쌀국수</li>
-        <li>Welcome to my introduction site! It is great to seeing you!</li>
+        <li>헤다는 본명인 다혜를 뒤집은 이름이에요.</li>
+        <li>좋아하는 음식은 쌀국수에요.</li>
+        <li>얉고 넓게 많은 것을 좋아합니다.</li>
       </ul>
     </div>
     <div class="moive_field">
       <h1>인생 영화 BEST 5</h1>
-      <div class="movies">
-        <div class="movie">
-          <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=221031" target="_blank">
-            <img class="movie_img" src="../images/Avatar.jpg"></a>
-          <div class="movie_infor">
-            <h3>아바타</h3>
-            <div>영화관에서 4번 본 영화, 또 보라면 또 볼 수 있는 영화</div>
-          </div>
-        </div>
-        <div class="movie">
-          <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=17773" target="_blank"><img class="movie_img"
-              src="../images/beforeSunrise.png"></a>
-          <div class="movie_infor">
-            <h3>비포 선라이즈</h3>
-            <div>비포 시리즈 다 좋아! 대사가 많아서 졸릴 수 있음.</div>
-          </div>
-        </div>
-        <div class="movie">
-          <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=151196" target="_blank"><img class="movie_img"
-              src="../images/wonder.jpg"></a>
-          <div class="movie_infor">
-            <h3>원더</h3>
-            <div>모두가 너무 소즁해..</div>
-          </div>
-        </div>
-        <div class="movie">
-          <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=130849" target="_blank"><img class="movie_img"
-              src="../images/moana.jpg"></a>
-          <div class="movie_infor">
-            <h3>모아나</h3>
-            <div>I am Moana~~🎶</div>
-          </div>
-        </div>
-        <div class="movie">
-          <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=68984" target="_blank"><img class="movie_img"
-              src="../images/mist.jpg"></a>
-          <div class="movie_infor">
-            <h3>미스트</h3>
-            <div>내 인생 가장 충격적 반전 영화</div>
-          </div>
-        </div>
+      <table class="movies">
+        <thead>
+          <tr class="movie_header">
+            <th>포스터</th>
+            <th>제목</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="movie">
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=221031" target="_blank">
+                <img class="movie_img" src="../images/Avatar.jpg"></a></td>
+            <td>
+              <h3>아바타</h3>
+            </td>
+            <td>영화관에서 4번 본 영화, 또 보라면 또 볼 수 있는 영화</td>
+          </tr>
+          <tr class="movie">
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=17773" target="_blank"><img
+                  class="movie_img" src="../images/beforeSunrise.png"></a></td>
+            <td>
+              <h3>비포 선라이즈</h3>
+            </td>
+            <td>비포 시리즈 다 좋아! 대사가 많아서 졸릴 수 있음.</td>
+          </tr>
+          <tr class="movie">
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=151196" target="_blank"><img
+                  class="movie_img" src="../images/wonder.jpg"></a></td>
+            <td>
+              <h3>원더</h3>
+            </td>
+            <td>모두가 너무 소즁해..</td>
+          </tr>
+          <tr class="movie">
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=130849" target="_blank"><img
+                  class="movie_img" src="../images/moana.jpg"></a></td>
+            <td>
+              <h3>모아나</h3>
+            </td>
+            <td>I am Moana~~🎶</td>
+          </tr>
+          <tr class="movie">
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=68984" target="_blank"><img
+                  class="movie_img" src="../images/mist.jpg"></a></td>
+            <td>
+              <h3>미스트</h3>
+            </td>
+            <td>내 인생 가장 충격적 반전 영화</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h1>방명록</h1>
+      <div>
+        이름: <input type="text" class="name" />
       </div>
-    </div>
-  </div>
-  <div>
-    <h1>방명록</h1>
-    <div>
-      이름: <input type="text">
-    </div>
-    <div>
-      <div>본인 취향 영화</div>
+
+      <h3>본인 취향 영화</h3>
       <form class="checkbox_movies">
-        <input type="checkbox" /> 아바타
-        <input type="checkbox" /> 비포선라이즈
-        <input type="checkbox" /> 원더
-        <button type="button">등록</button>
-        <button type="reset">취소</button>
+        <input type="checkbox" id="avatar" name="avatar" value="아바타">
+        <label for="avatar"> 아바타</label>
+        <input type="checkbox" id="before_sunrise" name="before_sunrise" value="비포 선라이즈">
+        <label for="before_sunrise"> 비포 선라이즈</label>
+        <input type="checkbox" id="wonder" name="wonder" value="원더">
+        <label for="wonder"> 원더</label>
+        <input type="checkbox" id="moana" name="moana" value="모아나">
+        <label for="moana"> 모아나</label>
+        <input type="checkbox" id="mist" name="mist" value="미스트">
+        <label for="mist"> 미스트</label>
+        <button type="button" class="confirm">등록</button>
+        <button type="reset" class="reset">취소</button>
 
       </form>
     </div>
   </div>
   </div>
-
+  </div>
 </body>
 
 </html>

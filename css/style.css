@@ -1,6 +1,25 @@
-.movie {
-  display: flex;
-  flex-direction: row;
+body {
+  width: 100%;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+th,
+td {
+  border: 1px solid black;
+  width: 33.3%;
+}
+
+table thead tbody {
+  width: 50%;
 }
 
 .movie_img {
